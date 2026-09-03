@@ -1,0 +1,949 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Vitaly Sikorsky, MilTech, LIC=MPPLD-8NUD6-45BT5-GH4AY-NS04J-QZY6S
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\SVI\Desktop\Project_GD32F450\MDK-ARM\Project_GD32F450.uvprojx
+Project File Date:  09/03/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'GD32F4XX'
+../src/gd32f4xx_it.c(37): warning: In file included from...
+../inc/main.h(12): warning: In file included from...
+../inc/protocol.h(53): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(42): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLSToBKDPacket) == USART_BUFFER_TX_SIZE_YLS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(62): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(53): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(98): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(62): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(106): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(98): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(114): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_32_3);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(106): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(122): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(114): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_32_3);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(130): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(122): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(138): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(130): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(146): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(138): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(173): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(146): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(414): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLSToYVPacket) == SIZE_MESSAGE_YLS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(173): note: previous definition is here
+mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+11 warnings generated.
+compiling gd32f4xx_it.c...
+compiling err.c...
+compiling api_lib.c...
+compiling if_api.c...
+compiling netbuf.c...
+compiling api_msg.c...
+compiling netdb.c...
+../src/netconf.c(43): warning: In file included from...
+../inc/main.h(12): warning: In file included from...
+../inc/protocol.h(53): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(42): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLSToBKDPacket) == USART_BUFFER_TX_SIZE_YLS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(62): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(53): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(98): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(62): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(106): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(98): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(114): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_32_3);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(106): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(122): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(114): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_32_3);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(130): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(122): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(138): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(130): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(146): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(138): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(173): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(146): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(414): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLSToYVPacket) == SIZE_MESSAGE_YLS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(173): note: previous definition is here
+mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+11 warnings generated.
+compiling netconf.c...
+compiling ConfigurationUSARTn.c...
+../src/gd32f4xx_enet_eval.c(37): warning: In file included from...
+../inc/main.h(12): warning: In file included from...
+../inc/protocol.h(53): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(42): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLSToBKDPacket) == USART_BUFFER_TX_SIZE_YLS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(62): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(53): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(98): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(62): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(106): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(98): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(114): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_32_3);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(106): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(122): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(114): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_32_3);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(130): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(122): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(138): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(130): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(146): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(138): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(173): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(146): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(414): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLSToYVPacket) == SIZE_MESSAGE_YLS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(173): note: previous definition is here
+mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+11 warnings generated.
+compiling gd32f4xx_enet_eval.c...
+../src/init_config.c(1): warning: In file included from...
+../inc/init_config.h(6): warning: In file included from...
+../inc/main.h(12): warning: In file included from...
+../inc/protocol.h(53): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(42): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLSToBKDPacket) == USART_BUFFER_TX_SIZE_YLS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(62): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(53): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(98): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(62): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(106): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(98): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(114): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_32_3);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(106): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(122): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(114): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_32_3);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(130): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(122): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(138): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(130): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(146): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(138): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(173): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(146): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(414): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLSToYVPacket) == SIZE_MESSAGE_YLS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(173): note: previous definition is here
+mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+11 warnings generated.
+compiling init_config.c...
+../src/main.c(2): warning: In file included from...
+../inc\netconf.h(37): warning: In file included from...
+../inc/main.h(12): warning: In file included from...
+../inc/protocol.h(53): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(42): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLSToBKDPacket) == USART_BUFFER_TX_SIZE_YLS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(62): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(53): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(98): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(62): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(106): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(98): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(114): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_32_3);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(106): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(122): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(114): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_32_3);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(130): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(122): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(138): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(130): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(146): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(138): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(173): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(146): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(414): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLSToYVPacket) == SIZE_MESSAGE_YLS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(173): note: previous definition is here
+mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../src/main.c(845): warning: passing 'volatile YLSToYVPacket *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+      udp_send_buf      (&YLSToYVPacket1,1432,addr,port);
+                         ^~~~~~~~~~~~~~~
+../inc\main.h(91): note: passing argument to parameter 'buf' here
+void udp_send_buf         (void * buf,  uint32_t size, const ip_addr_t *addr, u16_t port);
+                                  ^
+../src/main.c(853): warning: passing 'volatile YLSToYVPacket *' to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+      udp_send_buf      (&YLSToYVPacket2,1432,addr,port);
+                         ^~~~~~~~~~~~~~~
+../inc\main.h(91): note: passing argument to parameter 'buf' here
+void udp_send_buf         (void * buf,  uint32_t size, const ip_addr_t *addr, u16_t port);
+                                  ^
+13 warnings generated.
+compiling main.c...
+compiling netifapi.c...
+compiling tcpip.c...
+compiling sockets.c...
+compiling autoip.c...
+compiling icmp.c...
+compiling etharp.c...
+compiling dhcp.c...
+compiling igmp.c...
+compiling ip4.c...
+compiling ip4_addr.c...
+compiling ip4_frag.c...
+compiling altcp.c...
+compiling altcp_alloc.c...
+compiling altcp_tcp.c...
+compiling def.c...
+compiling dns.c...
+compiling ip.c...
+compiling init.c...
+compiling inet_chksum.c...
+compiling memp.c...
+compiling mem.c...
+compiling netif.c...
+compiling raw.c...
+compiling pbuf.c...
+compiling stats.c...
+compiling sys.c...
+compiling timeouts.c...
+compiling tcp_in.c...
+compiling ethernet.c...
+compiling tcp.c...
+compiling udp.c...
+compiling tcp_out.c...
+compiling acd.c...
+compiling gd32f4xx_crc.c...
+compiling system_gd32f4xx.c...
+../lwip-2.2.0/port/GD32F4xx/Basic/ethernetif.c(43): warning: In file included from...
+../inc/main.h(12): warning: In file included from...
+../inc/protocol.h(53): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(42): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLSToBKDPacket) == USART_BUFFER_TX_SIZE_YLS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(62): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(53): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(98): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(62): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(106): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(98): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(114): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_32_3);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(106): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(122): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(114): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_32_3);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(130): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(122): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(138): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(130): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(146): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(138): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(173): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(146): note: previous definition is here
+mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(414): warning: redefinition of typedef 'static_assert_failed' is a C11 feature [-Wtypedef-redefinition]
+mSTATIC_ASSERT(sizeof(YLSToYVPacket) == SIZE_MESSAGE_YLS);
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+../inc/protocol.h(173): note: previous definition is here
+mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
+^
+../inc/protocol.h(15): note: expanded from macro 'mSTATIC_ASSERT'
+#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
+                                             ^
+11 warnings generated.
+compiling ethernetif.c...
+compiling gd32f4xx_adc.c...
+compiling gd32f4xx_can.c...
+compiling gd32f4xx_ctc.c...
+compiling gd32f4xx_dac.c...
+compiling gd32f4xx_dbg.c...
+compiling gd32f4xx_dci.c...
+compiling gd32f4xx_dma.c...
+compiling gd32f4xx_exmc.c...
+compiling gd32f4xx_exti.c...
+compiling gd32f4xx_fmc.c...
+compiling gd32f4xx_enet.c...
+compiling gd32f4xx_fwdgt.c...
+compiling gd32f4xx_gpio.c...
+compiling gd32f4xx_iref.c...
+compiling gd32f4xx_i2c.c...
+compiling gd32f4xx_ipa.c...
+compiling gd32f4xx_misc.c...
+compiling gd32f4xx_pmu.c...
+compiling gd32f4xx_rcu.c...
+compiling gd32f4xx_syscfg.c...
+compiling gd32f4xx_sdio.c...
+compiling gd32f4xx_spi.c...
+compiling gd32f4xx_rtc.c...
+compiling gd32f4xx_timer.c...
+compiling gd32f4xx_trng.c...
+compiling gd32f4xx_wwdgt.c...
+compiling gd32f4xx_tli.c...
+compiling gd32f4xx_usart.c...
+linking...
+Program Size: Code=77844 RO-data=2244 RW-data=28 ZI-data=72772  
+FromELF: creating hex file...
+".\output\Project_GD32F450.axf" - 0 Error(s), 68 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: GigaDevice
+                https://gd32mcu.com/GigaDevice.GD32F4xx_DFP.3.3.0.pack
+                GigaDevice.GD32F4xx_DFP.3.3.0
+                GigaDevice GD32F4xx Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\SVI\AppData\Local\Arm\Packs\GigaDevice\GD32F4xx_DFP\3.3.0\Device\F4XX\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
