@@ -11,7 +11,7 @@
 #include "init_config.h"
 #include "protocol.h"
 
-
+#include "timers.h"
 //#define USE_DHCP       1 /* enable DHCP, if disabled static address is used */
 
 //#define USE_ENET_INTERRUPT
