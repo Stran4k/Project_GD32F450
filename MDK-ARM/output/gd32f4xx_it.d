@@ -1,11 +1,10 @@
-./output/ethernet.o: ..\src\ethernet.c ..\inc\ethernet.h \
-  ..\inc\gd32f4xx.h ..\Firmware\CMSIS\core_cm4.h \
+./output/gd32f4xx_it.o: ..\src\gd32f4xx_it.c ..\inc\gd32f4xx.h \
+  ..\Firmware\CMSIS\core_cm4.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\Firmware\CMSIS\core_cmInstr.h ..\Firmware\CMSIS\core_cmFunc.h \
   ..\Firmware\CMSIS\core_cm4_simd.h ..\inc\system_gd32f4xx.h \
   ..\inc\gd32f4xx_libopt.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h \
-  ..\inc\gd32f4xx.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h \
@@ -35,7 +34,9 @@
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h \
-  ..\lwip-2.2.0\src\include\lwip\udp.h \
+  ..\inc\gd32f4xx_it.h ..\inc\gd32f4xx.h ..\inc\main.h \
+  ..\inc\ConfigurationUSARTn.h ..\inc\init_config.h ..\inc\main.h \
+  ..\inc\ethernet.h ..\lwip-2.2.0\src\include\lwip\udp.h \
   ..\lwip-2.2.0\src\include\lwip\opt.h ..\inc\lwipopts.h \
   ..\lwip-2.2.0\src\include\lwip\debug.h \
   ..\lwip-2.2.0\src\include\lwip\arch.h \
@@ -66,7 +67,5 @@
   ..\lwip-2.2.0\src\include\lwip\ip6.h \
   ..\lwip-2.2.0\src\include\lwip\prot\ip.h \
   ..\lwip-2.2.0\src\include\lwip\prot\udp.h ..\inc\gd32f4xx_enet_eval.h \
-  ..\lwip-2.2.0\src\include\lwip\netif.h ..\inc\init_config.h \
-  ..\inc\main.h ..\inc\ConfigurationUSARTn.h ..\inc\ethernet.h \
-  ..\inc\uart.h ..\inc\protocol.h \
+  ..\lwip-2.2.0\src\include\lwip\netif.h ..\inc\protocol.h ..\inc\uart.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h

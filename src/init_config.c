@@ -191,35 +191,8 @@ USART5_RX;
 
 }
 
-void Timer1_config  (void)// from tests
-{
-    timer_parameter_struct timer_initpara;
-    
-    // Включение тактирования TIMER1
-    
-    // Деинициализация таймера
-    timer_deinit(TIMER1);
-    
-    // Настройка параметров таймера
-    timer_struct_para_init(&timer_initpara);
-    timer_initpara.prescaler         = (1000-1);   //   Fmax - 100 MHz
-    timer_initpara.period            = (250-1);//
-    timer_initpara.alignedmode       = TIMER_COUNTER_EDGE;
-    timer_initpara.counterdirection  = TIMER_COUNTER_UP;
-    timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
-    timer_initpara.repetitioncounter = 0;
-    
-    timer_init                (TIMER1, &timer_initpara);
-    nvic_irq_enable           (TIMER1_IRQn, 0,7);
-    timer_interrupt_enable    (TIMER1, TIMER_INT_UP);
-    timer_interrupt_flag_clear(TIMER1, TIMER_INT_FLAG_UP);
-            // Запуск таймера
-    timer_enable(TIMER1);
-}
 
 
-#define SHIM_PRESC  50 // min 1
-#define SHIM_PERIOD 20 // min 10 from stable work 50|20
 void Timer3_config  (void)// Fmax - 100 MHz SHIM
 {
   timer_deinit  (TIMER3);
@@ -342,3 +315,4 @@ void Timer6_config  (void)// Qwerty 125 us
   
 }
 
+// End File

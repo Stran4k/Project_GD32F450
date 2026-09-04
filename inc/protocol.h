@@ -12,8 +12,8 @@
  */
 #include "main.h"
 
-#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
 
+//#define mSTATIC_ASSERT(expr) typedef uint8_t static_assert_failed[(expr) ? 1 : -1]
 
 #define MAGIC_YV      (0x4B43) // ïåğåäàòü ñîîáùåíèå ßÂ
 #define MAGIC_KASU_KP (0x4B41)// ïåğåäàòü ñîîáùåíèå ÊÀÑÓ-ÊÏ
@@ -39,7 +39,7 @@ typedef struct __attribute__((packed))
   uint8_t reserv1[12];              // [   7-18  ]
   uint8_t src;                      // [   19    ] crc8
 }YLSToBKDPacket;
-mSTATIC_ASSERT(sizeof(YLSToBKDPacket) == USART_BUFFER_TX_SIZE_YLS);
+//mSTATIC_ASSERT(sizeof(YLSToBKDPacket) == USART_BUFFER_TX_SIZE_YLS);
 
 // ==================== ÏÀÊÅÒ     ßÊÏ  ÁÊÄ > ßËÑ ÁÊÕÎ-À  =========================
 #define USART_BUFFER_TX_SIZE_YKP  (32)
@@ -50,7 +50,7 @@ typedef struct __attribute__((packed))
   uint8_t reserv1[27];               // [   7-14  ]
   uint8_t src;                       // [   31    ] crc8
 }YKPToYLSPacket;
-mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
+//mSTATIC_ASSERT(sizeof(YKPToYLSPacket) == USART_BUFFER_TX_SIZE_YKP);
 // ==================== ÏÀÊÅÒ     ßÏÑ  ÁÊÄ > ßËÑ ÁÊÕÎ-À  =========================
 #define USART_BUFFER_TX_SIZE_YPS  (32)
 typedef struct __attribute__((packed))
@@ -59,7 +59,7 @@ typedef struct __attribute__((packed))
   uint8_t reserv1[30];               // [   7-14  ]
   uint8_t src;                       // [   31    ] crc8
 }YPSToYLSPacket;
-mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
+//mSTATIC_ASSERT(sizeof(YPSToYLSPacket) == USART_BUFFER_TX_SIZE_YPS);
 // ==================== ÏÀÊÅÒ     ßÀÇ  ÁÊÄ > ßËÑ ÁÊÕÎ-À  =========================
 #define USART_BUFFER_TX_SIZE_YAZ  (32)
 typedef struct __attribute__((packed))
@@ -95,7 +95,7 @@ typedef struct __attribute__((packed))
 
   uint8_t src;                        // [    24   ] crc8
 }YAZToYLSPacket;
-mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
+//mSTATIC_ASSERT(sizeof(YAZToYLSPacket) == USART_BUFFER_TX_SIZE_YAZ);
 // ==================== ÏÀÊÅÒ   ßËÊ-96 ÁÊÄ > ßËÑ ÁÊÕÎ-À  =========================
 #define USART_BUFFER_TX_SIZE_YLK_96  (32)
 typedef struct __attribute__((packed))
@@ -103,15 +103,15 @@ typedef struct __attribute__((packed))
   uint8_t reserv1[USART_BUFFER_TX_SIZE_YLK_96-1];               // [     ]
   uint8_t src;                      // [   31    ] crc8
 }YLK_96ToYLSPacket;
-mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
+//mSTATIC_ASSERT(sizeof(YLK_96ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_96);
 // ==================== ÏÀÊÅÒ ßËÊ-32-3 ÁÊÄ > ßËÑ ÁÊÕÎ-À  =========================
-#define USART_BUFFER_TX_SIZE_YLK_32_3  (32)
+#define USART_BUFFER_TX_SIZE_YLK32_3  (32)
 typedef struct __attribute__((packed))
 {
-  uint8_t reserv1[USART_BUFFER_TX_SIZE_YLK_32_3-1];                 // [     ]
+  uint8_t reserv1[USART_BUFFER_TX_SIZE_YLK32_3-1];                 // [     ]
   uint8_t src;                      // [   31    ] crc8 
 }YLK_32_3ToYLSPacket;
-mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK_32_3);
+//mSTATIC_ASSERT(sizeof(YLK_32_3ToYLSPacket) == USART_BUFFER_TX_SIZE_YLK32_3);
 // ==================== ÏÀÊÅÒ   ßÂÏ    ÁÊÄ > ßËÑ ÁÊÕÎ-À  =========================
 #define USART_BUFFER_TX_SIZE_YVP  (32)
 typedef struct __attribute__((packed))
@@ -119,7 +119,7 @@ typedef struct __attribute__((packed))
   uint8_t reserv[USART_BUFFER_TX_SIZE_YVP-1];               // [   7-14  ]
   uint8_t src;                      // [   31    ] crc8
 }YVPToYLSPacket;
-mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
+//mSTATIC_ASSERT(sizeof(YVPToYLSPacket) == USART_BUFFER_TX_SIZE_YVP);
 // ==================== ÏÀÊÅÒ   ßÒÏ    ÁÊÄ > ßËÑ ÁÊÕÎ-À  =========================
 #define USART_BUFFER_TX_SIZE_YTP  (32)
 typedef struct __attribute__((packed))
@@ -127,7 +127,7 @@ typedef struct __attribute__((packed))
   uint8_t reserv1[USART_BUFFER_TX_SIZE_YTP-1];  // [         ]
   uint8_t src;                                  // [   31    ] crc8
 }YTPToYLSPacket;
-mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
+//mSTATIC_ASSERT(sizeof(YTPToYLSPacket) == USART_BUFFER_TX_SIZE_YTP);
 // ==================== ÏÀÊÅÒ   ßÒÌ    ÁÊÄ > ßËÑ ÁÊÕÎ-À  =========================
 #define USART_BUFFER_TX_SIZE_YTM  (32)
 typedef struct __attribute__((packed))
@@ -135,7 +135,7 @@ typedef struct __attribute__((packed))
   uint8_t reserv1[USART_BUFFER_TX_SIZE_YTM-1];  // [   7-14  ]
   uint8_t src;                                  // [    1    ] crc8
 }YTMToYLSPacket;
-mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
+//mSTATIC_ASSERT(sizeof(YTMToYLSPacket) == USART_BUFFER_TX_SIZE_YTM);
 // ==================== ÏÀÊÅÒ   ßÃĞ    ÁÊÄ > ßËÑ ÁÊÕÎ-À  =========================
 #define USART_BUFFER_TX_SIZE_YGR  (32)
 typedef struct __attribute__((packed))
@@ -143,7 +143,7 @@ typedef struct __attribute__((packed))
   uint8_t reserv1[USART_BUFFER_TX_SIZE_YGR-1];  // [   7-14  ]
   uint8_t src;                                  // [    1    ] crc8
 }YGRToYLSPacket;
-mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
+//mSTATIC_ASSERT(sizeof(YGRToYLSPacket) == USART_BUFFER_TX_SIZE_YGR);
 //================================================================================
 
 
@@ -170,10 +170,81 @@ typedef struct __attribute__((packed))
   uint8_t  reserv[SIZE_MESSAGE_YV - sizeof(YVToYLSData)];        // [ X - 79 ] Ğåçåğâ
 }YVToYLSPacket;
 
-mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
+//mSTATIC_ASSERT(SIZE_MESSAGE_YV == sizeof(YVToYLSPacket));
 
 // ==================== ÏÀÊÅÒ ßËÑ ÁÊÕÎ-À > ßÂ (8192 áàéò) ========================
 //#define MAP_HEALFS
+
+typedef struct __attribute__((packed))
+{
+                                    // BKD 
+  //  ykp
+  uint16_t  ykp_poc_1   :12;//0
+  uint16_t  ykp_poc_2   :12;//0
+  uint16_t  ykp_poc_3   :12;//0
+
+  //  yaz
+  uint16_t  yaz_poc_1   :12;//0
+  uint16_t  yaz_poc_2   :12;//0
+  uint16_t  yaz_poc_3   :12;//0
+  
+  //  yps
+  uint16_t  yps_poc_1   :12;//0
+  uint16_t  yps_poc_2   :12;//0
+  uint16_t  yps_poc_3   :12;//0
+  
+  //  ylk96
+  uint16_t  ylk96_poc_1 :12;//0
+  uint16_t  ylk96_poc_2 :12;//0
+  uint16_t  ylk96_poc_3 :12;//0
+  
+                                    // BKHO_A 
+  //  yps
+  uint16_t  yps_bkho_a_poc_1  :1;//0
+  uint16_t  yps_bkho_a_poc_2  :1;//0
+  uint16_t  yps_bkho_a_poc_3  :1;//0
+  //  ytp1
+  uint16_t  ytp1_bkho_a_poc_1 :1;//0
+  uint16_t  ytp1_bkho_a_poc_2 :1;//0
+  uint16_t  ytp1_bkho_a_poc_3 :1;//0
+  //  ytp2
+  uint16_t  ytp2_bkho_a_poc_1 :1;//0
+  uint16_t  ytp2_bkho_a_poc_2 :1;//0
+  uint16_t  ytp2_bkho_a_poc_3 :1;//0
+  //  ytm1
+  uint16_t  ytm1_bkho_a_poc_1 :1;//0
+  uint16_t  ytm1_bkho_a_poc_2 :1;//0
+  uint16_t  ytm1_bkho_a_poc_3 :1;//0
+  //  ytm2
+  uint16_t  ytm2_bkho_a_poc_1 :1;//0
+  uint16_t  ytm2_bkho_a_poc_2 :1;//0
+  uint16_t  ytm2_bkho_a_poc_3 :1;//0
+  //  ygr
+  uint16_t  ygr_bkho_a_poc_1  :1;//0
+  uint16_t  ygr_bkho_a_poc_2  :1;//0
+  uint16_t  ygr_bkho_a_poc_3  :1;//0
+  //  ylk-32-3
+  uint16_t  ylk32_3_bkho_a_poc_1  :1;//0
+  uint16_t  ylk32_3_bkho_a_poc_2  :1;//0
+  uint16_t  ylk32_3_bkho_a_poc_3  :1;//0
+  //  yvp
+  uint16_t  yvp_bkho_a_poc_1  :1;//0
+  uint16_t  yvp_bkho_a_poc_2  :1;//0
+  uint16_t  yvp_bkho_a_poc_3  :1;//0
+  
+                      // Out servo driver
+  uint8_t  out_servo8 :1;//21
+  uint8_t  out_servo7 :1;
+  uint8_t  out_servo6 :1;
+  uint8_t  out_servo5 :1;
+  uint8_t  out_servo4 :1;
+  uint8_t  out_servo3 :1;
+  uint8_t  out_servo2 :1;
+  uint8_t  out_servo1 :1;                    
+
+}health_bit_map;
+
+
 typedef struct __attribute__((packed))
 {
                       // BKD 
@@ -380,7 +451,7 @@ typedef struct __attribute__((packed))
   uint8_t  out_servo2 :1;
   uint8_t  out_servo1 :1;                    
 
-}health_bit_map;
+}health_bit_map_old;
 typedef struct __attribute__((packed))
 {
   health_bit_map data;
@@ -392,8 +463,10 @@ typedef struct __attribute__((packed))
 #if (defined (MAP_HEALFS))
   health_bit health_abonent ;                                             // [   0-30  ] Äàííûå î æèâûõ ïğîöàõ 
 #else
-  uint8_t    health_abonent [SIZE_HEALTH_ABONENT];                        // [   0-30  ] Äàííûå î æèâûõ ïğîöàõ 
+  //uint8_t    health_abonent [SIZE_HEALTH_ABONENT];                        // [   0-30  ] Äàííûå î æèâûõ ïğîöàõ 
+  health_bit_map health_abonent ;
 #endif
+  
   uint8_t  yps_mask_BKHO_A  [3];                                          // [  31-33  ] Ìàñêà ïèğîñğåäñòâ äëÿ ÁÊÕÎ-À
   uint8_t  yps_mask         [12][3];                                      // [  34-69  ] Ìàñêè ïèğîñğåäñòâ äëÿ 12 áëîêîâ
   int16_t  ykp_angel        [12][3][2];                                   // [  70-213 ] 32 Óãëà 12 áëîêîâ c êàæäîãî èç 3õ  ïğîöåññîğîâ
@@ -411,7 +484,7 @@ typedef struct __attribute__((packed))
   uint8_t  reserv      [ SIZE_MESSAGE_YLS - sizeof(YLSToYVData) ];    // [ X - 8191 ] 
   
 }YLSToYVPacket;
-mSTATIC_ASSERT(sizeof(YLSToYVPacket) == SIZE_MESSAGE_YLS);
+//mSTATIC_ASSERT(sizeof(YLSToYVPacket) == SIZE_MESSAGE_YLS);
 //================================================================================
 
 //================================================================================

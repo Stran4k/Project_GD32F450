@@ -81,12 +81,12 @@ static void low_level_init(struct netif *netif)
     netif->hwaddr_len = ETHARP_HWADDR_LEN;
 
     /* set MAC hardware address */
-    netif->hwaddr[0] =  BOARD_MAC_ADDR0;
-    netif->hwaddr[1] =  BOARD_MAC_ADDR1;
-    netif->hwaddr[2] =  BOARD_MAC_ADDR2;
-    netif->hwaddr[3] =  BOARD_MAC_ADDR3;
-    netif->hwaddr[4] =  BOARD_MAC_ADDR4;
-    netif->hwaddr[5] =  BOARD_MAC_ADDR5;
+    netif->hwaddr[0] =  LOCAL_MAC_ADDR0;
+    netif->hwaddr[1] =  LOCAL_MAC_ADDR1;
+    netif->hwaddr[2] =  LOCAL_MAC_ADDR2;
+    netif->hwaddr[3] =  LOCAL_MAC_ADDR3;
+    netif->hwaddr[4] =  LOCAL_MAC_ADDR4;
+    netif->hwaddr[5] =  LOCAL_MAC_ADDR5;
     
     /* initialize MAC address in ethernet MAC */ 
     enet_mac_address_set(ENET_MAC_ADDRESS0, netif->hwaddr);

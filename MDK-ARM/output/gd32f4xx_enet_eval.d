@@ -1,11 +1,11 @@
-./output/ethernet.o: ..\src\ethernet.c ..\inc\ethernet.h \
+./output/gd32f4xx_enet_eval.o: ..\src\gd32f4xx_enet_eval.c \
+  ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h \
   ..\inc\gd32f4xx.h ..\Firmware\CMSIS\core_cm4.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\Firmware\CMSIS\core_cmInstr.h ..\Firmware\CMSIS\core_cmFunc.h \
   ..\Firmware\CMSIS\core_cm4_simd.h ..\inc\system_gd32f4xx.h \
   ..\inc\gd32f4xx_libopt.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h \
-  ..\inc\gd32f4xx.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h \
@@ -30,12 +30,11 @@
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h \
-  ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h \
   ..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h \
-  ..\lwip-2.2.0\src\include\lwip\udp.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  ..\inc\gd32f4xx_enet_eval.h ..\lwip-2.2.0\src\include\lwip\netif.h \
   ..\lwip-2.2.0\src\include\lwip\opt.h ..\inc\lwipopts.h \
   ..\lwip-2.2.0\src\include\lwip\debug.h \
   ..\lwip-2.2.0\src\include\lwip\arch.h \
@@ -46,27 +45,27 @@
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\inttypes.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\limits.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\ctype.h \
-  ..\lwip-2.2.0\src\include\lwip\pbuf.h \
   ..\lwip-2.2.0\src\include\lwip\err.h \
-  ..\lwip-2.2.0\src\include\lwip\netif.h \
   ..\lwip-2.2.0\src\include\lwip\ip_addr.h \
   ..\lwip-2.2.0\src\include\lwip\def.h \
   ..\lwip-2.2.0\src\include\lwip\ip4_addr.h \
   ..\lwip-2.2.0\src\include\lwip\ip6_addr.h \
   ..\lwip-2.2.0\src\include\lwip\def.h \
+  ..\lwip-2.2.0\src\include\lwip\pbuf.h \
   ..\lwip-2.2.0\src\include\lwip\stats.h \
   ..\lwip-2.2.0\src\include\lwip\mem.h \
   ..\lwip-2.2.0\src\include\lwip\memp.h \
   ..\lwip-2.2.0\src\include\lwip\priv\memp_std.h \
   ..\lwip-2.2.0\src\include\lwip\priv\memp_priv.h \
-  ..\lwip-2.2.0\src\include\lwip\priv\mem_priv.h \
+  ..\lwip-2.2.0\src\include\lwip\priv\mem_priv.h ..\inc\main.h \
+  ..\inc\gd32f4xx.h ..\inc\ConfigurationUSARTn.h ..\inc\init_config.h \
+  ..\inc\main.h ..\inc\ethernet.h ..\lwip-2.2.0\src\include\lwip\udp.h \
+  ..\lwip-2.2.0\src\include\lwip\netif.h \
   ..\lwip-2.2.0\src\include\lwip\ip.h \
   ..\lwip-2.2.0\src\include\lwip\ip4.h \
   ..\lwip-2.2.0\src\include\lwip\prot\ip4.h \
   ..\lwip-2.2.0\src\include\lwip\ip6.h \
   ..\lwip-2.2.0\src\include\lwip\prot\ip.h \
   ..\lwip-2.2.0\src\include\lwip\prot\udp.h ..\inc\gd32f4xx_enet_eval.h \
-  ..\lwip-2.2.0\src\include\lwip\netif.h ..\inc\init_config.h \
-  ..\inc\main.h ..\inc\ConfigurationUSARTn.h ..\inc\ethernet.h \
-  ..\inc\uart.h ..\inc\protocol.h \
+  ..\inc\protocol.h ..\inc\uart.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h

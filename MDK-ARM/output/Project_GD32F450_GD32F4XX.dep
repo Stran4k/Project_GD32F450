@@ -1,6 +1,7 @@
 Dependencies for Project 'Project_GD32F450', Target 'GD32F4XX': (DO NOT MODIFY !)
 CompilerVersion: 6160000::V6.16::ARMCLANG
-F (..\src\main.c)(0x6A995CF3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/main.o -MD)
+F (..\src\main.c)(0x6A997673)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/main.o -MD)
+I (..\inc\main.h)(0x6A9978C2)
 I (..\inc\gd32f4xx.h)(0x69FDDBAE)
 I (..\Firmware\CMSIS\core_cm4.h)(0x67A458EF)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60354E20)
@@ -39,11 +40,10 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x60354E20)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x67A458EE)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x67A458EE)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x67A458EE)
-I (..\inc\netconf.h)(0x68B69E64)
-I (..\inc\main.h)(0x6A9968BC)
 I (..\inc\ConfigurationUSARTn.h)(0x6A45F7AA)
-I (..\inc\gd32f4xx_enet_eval.h)(0x68B69E64)
-I (..\lwip-2.2.0\src\include\lwip\netif.h)(0x67A458E7)
+I (..\inc\init_config.h)(0x6A997549)
+I (..\inc\ethernet.h)(0x6A99784E)
+I (..\lwip-2.2.0\src\include\lwip\udp.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\opt.h)(0x67A458E7)
 I (..\inc\lwipopts.h)(0x68B69E64)
 I (..\lwip-2.2.0\src\include\lwip\debug.h)(0x67A458E7)
@@ -55,36 +55,30 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60354E20)
 I (C:\Keil_v5\ARM\ARMCLANG\include\inttypes.h)(0x60354E06)
 I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x60354E1A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\ctype.h)(0x60354E06)
+I (..\lwip-2.2.0\src\include\lwip\pbuf.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\err.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\netif.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\ip_addr.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\def.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\ip4_addr.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\ip6_addr.h)(0x67A458E7)
-I (..\lwip-2.2.0\src\include\lwip\pbuf.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\stats.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\mem.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\memp.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\priv\memp_std.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\priv\memp_priv.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\priv\mem_priv.h)(0x67A458E7)
-I (..\inc\init_config.h)(0x6A7ED49C)
-I (..\inc\protocol.h)(0x6A719E28)
-I (..\lwip-2.2.0\src\include\lwip\timeouts.h)(0x67A458E7)
-I (..\lwip-2.2.0\src\include\lwip\udp.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\ip.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\ip4.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\prot\ip4.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\ip6.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\prot\ip.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\prot\udp.h)(0x67A458E7)
-I (..\lwip-2.2.0\src\include\lwip\init.h)(0x67A458E7)
-I (..\lwip-2.2.0\src\include\netif\etharp.h)(0x67A458E8)
-I (..\lwip-2.2.0\src\include\lwip\etharp.h)(0x67A458E7)
-I (..\lwip-2.2.0\src\include\lwip\prot\ethernet.h)(0x67A458E7)
-I (..\lwip-2.2.0\src\include\lwip\prot\ieee.h)(0x67A458E7)
-I (..\lwip-2.2.0\src\include\lwip\prot\etharp.h)(0x67A458E7)
-I (..\lwip-2.2.0\src\include\netif\ethernet.h)(0x67A458E8)
+I (..\inc\gd32f4xx_enet_eval.h)(0x68B69E64)
+I (..\inc\protocol.h)(0x6A9AAE9E)
+I (..\inc\uart.h)(0x6A9974A0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68FF4D35)
+I (..\inc\netconf.h)(0x68B69E64)
 F (..\src\gd32f4xx_it.c)(0x68B578D3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/gd32f4xx_it.o -MD)
 I (..\inc\gd32f4xx.h)(0x69FDDBAE)
 I (..\Firmware\CMSIS\core_cm4.h)(0x67A458EF)
@@ -125,10 +119,11 @@ I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x67A458EE)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x67A458EE)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x67A458EE)
 I (..\inc\gd32f4xx_it.h)(0x68B69E64)
-I (..\inc\main.h)(0x6A9968BC)
+I (..\inc\main.h)(0x6A9978C2)
 I (..\inc\ConfigurationUSARTn.h)(0x6A45F7AA)
-I (..\inc\gd32f4xx_enet_eval.h)(0x68B69E64)
-I (..\lwip-2.2.0\src\include\lwip\netif.h)(0x67A458E7)
+I (..\inc\init_config.h)(0x6A997549)
+I (..\inc\ethernet.h)(0x6A99784E)
+I (..\lwip-2.2.0\src\include\lwip\udp.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\opt.h)(0x67A458E7)
 I (..\inc\lwipopts.h)(0x68B69E64)
 I (..\lwip-2.2.0\src\include\lwip\debug.h)(0x67A458E7)
@@ -140,20 +135,29 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60354E20)
 I (C:\Keil_v5\ARM\ARMCLANG\include\inttypes.h)(0x60354E06)
 I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x60354E1A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\ctype.h)(0x60354E06)
+I (..\lwip-2.2.0\src\include\lwip\pbuf.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\err.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\netif.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\ip_addr.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\def.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\ip4_addr.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\ip6_addr.h)(0x67A458E7)
-I (..\lwip-2.2.0\src\include\lwip\pbuf.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\stats.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\mem.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\memp.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\priv\memp_std.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\priv\memp_priv.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\priv\mem_priv.h)(0x67A458E7)
-I (..\inc\init_config.h)(0x6A7ED49C)
-I (..\inc\protocol.h)(0x6A719E28)
+I (..\lwip-2.2.0\src\include\lwip\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip4.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\ip4.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip6.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\udp.h)(0x67A458E7)
+I (..\inc\gd32f4xx_enet_eval.h)(0x68B69E64)
+I (..\inc\protocol.h)(0x6A9AAE9E)
+I (..\inc\uart.h)(0x6A9974A0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68FF4D35)
 F (..\src\gd32f4xx_enet_eval.c)(0x6A4C94F1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/gd32f4xx_enet_eval.o -MD)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x67F68AD1)
 I (..\inc\gd32f4xx.h)(0x69FDDBAE)
@@ -218,11 +222,21 @@ I (..\lwip-2.2.0\src\include\lwip\memp.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\priv\memp_std.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\priv\memp_priv.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\priv\mem_priv.h)(0x67A458E7)
-I (..\inc\main.h)(0x6A9968BC)
+I (..\inc\main.h)(0x6A9978C2)
 I (..\inc\ConfigurationUSARTn.h)(0x6A45F7AA)
-I (..\inc\init_config.h)(0x6A7ED49C)
-I (..\inc\protocol.h)(0x6A719E28)
-F (..\src\netconf.c)(0x6A042CDF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/netconf.o -MD)
+I (..\inc\init_config.h)(0x6A997549)
+I (..\inc\ethernet.h)(0x6A99784E)
+I (..\lwip-2.2.0\src\include\lwip\udp.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip4.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\ip4.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip6.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\udp.h)(0x67A458E7)
+I (..\inc\protocol.h)(0x6A9AAE9E)
+I (..\inc\uart.h)(0x6A9974A0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68FF4D35)
+F (..\src\netconf.c)(0x6A9977CF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/netconf.o -MD)
 I (..\lwip-2.2.0\src\include\lwip\mem.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\opt.h)(0x67A458E7)
 I (..\inc\lwipopts.h)(0x68B69E64)
@@ -270,7 +284,7 @@ I (..\lwip-2.2.0\src\include\lwip\dhcp.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\acd.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\prot\acd.h)(0x67A458E7)
 I (..\lwip-2.2.0\port\GD32F4xx\Basic\ethernetif.h)(0x67A458E5)
-I (..\inc\main.h)(0x6A9968BC)
+I (..\inc\main.h)(0x6A9978C2)
 I (..\inc\gd32f4xx.h)(0x69FDDBAE)
 I (..\Firmware\CMSIS\core_cm4.h)(0x67A458EF)
 I (..\Firmware\CMSIS\core_cmInstr.h)(0x67A458EF)
@@ -308,9 +322,12 @@ I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x67A458EE)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x67A458EE)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x67A458EE)
 I (..\inc\ConfigurationUSARTn.h)(0x6A45F7AA)
+I (..\inc\init_config.h)(0x6A997549)
+I (..\inc\ethernet.h)(0x6A99784E)
 I (..\inc\gd32f4xx_enet_eval.h)(0x68B69E64)
-I (..\inc\init_config.h)(0x6A7ED49C)
-I (..\inc\protocol.h)(0x6A719E28)
+I (..\inc\protocol.h)(0x6A9AAE9E)
+I (..\inc\uart.h)(0x6A9974A0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68FF4D35)
 I (..\inc\netconf.h)(0x68B69E64)
 I (..\lwip-2.2.0\src\include\lwip\priv\tcp_priv.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\prot\tcp.h)(0x67A458E7)
@@ -355,9 +372,9 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x60354E20)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x67A458EE)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x67A458EE)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x67A458EE)
-F (..\src\init_config.c)(0x6A7EEDF6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/init_config.o -MD)
-I (..\inc\init_config.h)(0x6A7ED49C)
-I (..\inc\main.h)(0x6A9968BC)
+F (..\src\init_config.c)(0x6A997561)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/init_config.o -MD)
+I (..\inc\init_config.h)(0x6A997549)
+I (..\inc\main.h)(0x6A9978C2)
 I (..\inc\gd32f4xx.h)(0x69FDDBAE)
 I (..\Firmware\CMSIS\core_cm4.h)(0x67A458EF)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60354E20)
@@ -397,8 +414,8 @@ I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x67A458EE)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x67A458EE)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x67A458EE)
 I (..\inc\ConfigurationUSARTn.h)(0x6A45F7AA)
-I (..\inc\gd32f4xx_enet_eval.h)(0x68B69E64)
-I (..\lwip-2.2.0\src\include\lwip\netif.h)(0x67A458E7)
+I (..\inc\ethernet.h)(0x6A99784E)
+I (..\lwip-2.2.0\src\include\lwip\udp.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\opt.h)(0x67A458E7)
 I (..\inc\lwipopts.h)(0x68B69E64)
 I (..\lwip-2.2.0\src\include\lwip\debug.h)(0x67A458E7)
@@ -410,20 +427,264 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60354E20)
 I (C:\Keil_v5\ARM\ARMCLANG\include\inttypes.h)(0x60354E06)
 I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x60354E1A)
 I (C:\Keil_v5\ARM\ARMCLANG\include\ctype.h)(0x60354E06)
+I (..\lwip-2.2.0\src\include\lwip\pbuf.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\err.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\netif.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\ip_addr.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\def.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\ip4_addr.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\ip6_addr.h)(0x67A458E7)
-I (..\lwip-2.2.0\src\include\lwip\pbuf.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\stats.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\mem.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\memp.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\priv\memp_std.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\priv\memp_priv.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\priv\mem_priv.h)(0x67A458E7)
-I (..\inc\protocol.h)(0x6A719E28)
-F (.\timers.c)(0x6A9968BC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/timers.o -MD)
+I (..\lwip-2.2.0\src\include\lwip\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip4.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\ip4.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip6.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\udp.h)(0x67A458E7)
+I (..\inc\gd32f4xx_enet_eval.h)(0x68B69E64)
+I (..\inc\protocol.h)(0x6A9AAE9E)
+I (..\inc\uart.h)(0x6A9974A0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68FF4D35)
+F (..\src\ethernet.c)(0x6A9AB018)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/ethernet.o -MD)
+I (..\inc\ethernet.h)(0x6A99784E)
+I (..\inc\gd32f4xx.h)(0x69FDDBAE)
+I (..\Firmware\CMSIS\core_cm4.h)(0x67A458EF)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60354E20)
+I (..\Firmware\CMSIS\core_cmInstr.h)(0x67A458EF)
+I (..\Firmware\CMSIS\core_cmFunc.h)(0x67A458EF)
+I (..\Firmware\CMSIS\core_cm4_simd.h)(0x67A458EF)
+I (..\inc\system_gd32f4xx.h)(0x68B69E64)
+I (..\inc\gd32f4xx_libopt.h)(0x68B69E64)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x67F68AD1)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x60354E20)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x67A458EE)
+I (..\lwip-2.2.0\src\include\lwip\udp.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\opt.h)(0x67A458E7)
+I (..\inc\lwipopts.h)(0x68B69E64)
+I (..\lwip-2.2.0\src\include\lwip\debug.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\arch.h)(0x67A458E7)
+I (..\lwip-2.2.0\port\GD32F4xx\arch\cc.h)(0x67A458E5)
+I (..\lwip-2.2.0\port\GD32F4xx\arch\cpu.h)(0x67A458E5)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60354E24)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60354E20)
+I (C:\Keil_v5\ARM\ARMCLANG\include\inttypes.h)(0x60354E06)
+I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x60354E1A)
+I (C:\Keil_v5\ARM\ARMCLANG\include\ctype.h)(0x60354E06)
+I (..\lwip-2.2.0\src\include\lwip\pbuf.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\err.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\netif.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip_addr.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\def.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip4_addr.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip6_addr.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\stats.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\mem.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\memp.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\priv\memp_std.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\priv\memp_priv.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\priv\mem_priv.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip4.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\ip4.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip6.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\udp.h)(0x67A458E7)
+I (..\inc\gd32f4xx_enet_eval.h)(0x68B69E64)
+I (..\inc\init_config.h)(0x6A997549)
+I (..\inc\main.h)(0x6A9978C2)
+I (..\inc\ConfigurationUSARTn.h)(0x6A45F7AA)
+I (..\inc\uart.h)(0x6A9974A0)
+I (..\inc\protocol.h)(0x6A9AAE9E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68FF4D35)
+F (..\src\timers.c)(0x6A99751B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/timers.o -MD)
+I (..\inc\timers.h)(0x6A997536)
+I (..\inc\main.h)(0x6A9978C2)
+I (..\inc\gd32f4xx.h)(0x69FDDBAE)
+I (..\Firmware\CMSIS\core_cm4.h)(0x67A458EF)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60354E20)
+I (..\Firmware\CMSIS\core_cmInstr.h)(0x67A458EF)
+I (..\Firmware\CMSIS\core_cmFunc.h)(0x67A458EF)
+I (..\Firmware\CMSIS\core_cm4_simd.h)(0x67A458EF)
+I (..\inc\system_gd32f4xx.h)(0x68B69E64)
+I (..\inc\gd32f4xx_libopt.h)(0x68B69E64)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x67F68AD1)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x60354E20)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x67A458EE)
+I (..\inc\ConfigurationUSARTn.h)(0x6A45F7AA)
+I (..\inc\init_config.h)(0x6A997549)
+I (..\inc\ethernet.h)(0x6A99784E)
+I (..\lwip-2.2.0\src\include\lwip\udp.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\opt.h)(0x67A458E7)
+I (..\inc\lwipopts.h)(0x68B69E64)
+I (..\lwip-2.2.0\src\include\lwip\debug.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\arch.h)(0x67A458E7)
+I (..\lwip-2.2.0\port\GD32F4xx\arch\cc.h)(0x67A458E5)
+I (..\lwip-2.2.0\port\GD32F4xx\arch\cpu.h)(0x67A458E5)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60354E24)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60354E20)
+I (C:\Keil_v5\ARM\ARMCLANG\include\inttypes.h)(0x60354E06)
+I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x60354E1A)
+I (C:\Keil_v5\ARM\ARMCLANG\include\ctype.h)(0x60354E06)
+I (..\lwip-2.2.0\src\include\lwip\pbuf.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\err.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\netif.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip_addr.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\def.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip4_addr.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip6_addr.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\stats.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\mem.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\memp.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\priv\memp_std.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\priv\memp_priv.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\priv\mem_priv.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip4.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\ip4.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip6.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\udp.h)(0x67A458E7)
+I (..\inc\gd32f4xx_enet_eval.h)(0x68B69E64)
+I (..\inc\protocol.h)(0x6A9AAE9E)
+I (..\inc\uart.h)(0x6A9974A0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68FF4D35)
+F (..\src\uart.c)(0x6A9AB018)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/uart.o -MD)
+I (..\inc\uart.h)(0x6A9974A0)
+I (..\inc\main.h)(0x6A9978C2)
+I (..\inc\gd32f4xx.h)(0x69FDDBAE)
+I (..\Firmware\CMSIS\core_cm4.h)(0x67A458EF)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60354E20)
+I (..\Firmware\CMSIS\core_cmInstr.h)(0x67A458EF)
+I (..\Firmware\CMSIS\core_cmFunc.h)(0x67A458EF)
+I (..\Firmware\CMSIS\core_cm4_simd.h)(0x67A458EF)
+I (..\inc\system_gd32f4xx.h)(0x68B69E64)
+I (..\inc\gd32f4xx_libopt.h)(0x68B69E64)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x67F68AD1)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x60354E20)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x67A458EE)
+I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x67A458EE)
+I (..\inc\ConfigurationUSARTn.h)(0x6A45F7AA)
+I (..\inc\init_config.h)(0x6A997549)
+I (..\inc\ethernet.h)(0x6A99784E)
+I (..\lwip-2.2.0\src\include\lwip\udp.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\opt.h)(0x67A458E7)
+I (..\inc\lwipopts.h)(0x68B69E64)
+I (..\lwip-2.2.0\src\include\lwip\debug.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\arch.h)(0x67A458E7)
+I (..\lwip-2.2.0\port\GD32F4xx\arch\cc.h)(0x67A458E5)
+I (..\lwip-2.2.0\port\GD32F4xx\arch\cpu.h)(0x67A458E5)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60354E24)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x60354E20)
+I (C:\Keil_v5\ARM\ARMCLANG\include\inttypes.h)(0x60354E06)
+I (C:\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x60354E1A)
+I (C:\Keil_v5\ARM\ARMCLANG\include\ctype.h)(0x60354E06)
+I (..\lwip-2.2.0\src\include\lwip\pbuf.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\err.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\netif.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip_addr.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\def.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip4_addr.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip6_addr.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\stats.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\mem.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\memp.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\priv\memp_std.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\priv\memp_priv.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\priv\mem_priv.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip4.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\ip4.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip6.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\udp.h)(0x67A458E7)
+I (..\inc\gd32f4xx_enet_eval.h)(0x68B69E64)
+I (..\inc\protocol.h)(0x6A9AAE9E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68FF4D35)
 F (..\lwip-2.2.0\src\api\api_lib.c)(0x67A458E6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/api_lib.o -MD)
 I (..\lwip-2.2.0\src\include\lwip\opt.h)(0x67A458E7)
 I (..\inc\lwipopts.h)(0x68B69E64)
@@ -1441,7 +1702,7 @@ I (..\lwip-2.2.0\src\include\lwip\prot\ieee.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\prot\etharp.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\prot\acd.h)(0x67A458E7)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68FF4D35)
-F (..\lwip-2.2.0\src\netif\ethernet.c)(0x67A458E8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/ethernet.o -MD)
+F (..\lwip-2.2.0\src\netif\ethernet.c)(0x67A458E8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/ethernet_1.o -MD)
 I (..\lwip-2.2.0\src\include\lwip\opt.h)(0x67A458E7)
 I (..\inc\lwipopts.h)(0x68B69E64)
 I (..\lwip-2.2.0\src\include\lwip\debug.h)(0x67A458E7)
@@ -1517,7 +1778,7 @@ I (..\lwip-2.2.0\src\include\lwip\prot\ethernet.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\prot\ieee.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\prot\etharp.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\prot\acd.h)(0x67A458E7)
-F (..\lwip-2.2.0\port\GD32F4xx\Basic\ethernetif.c)(0x6A99394B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/ethernetif.o -MD)
+F (..\lwip-2.2.0\port\GD32F4xx\Basic\ethernetif.c)(0x6A9AB0D2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Firmware/GD32F4xx_standard_peripheral/Include -I ../Utilities -I ../inc -I ../lwip-2.2.0/src/include -I ../lwip-2.2.0/src/include/ipv4 -I ../lwip-2.2.0/src/include/netif -I ../lwip-2.2.0/src/include/lwip -I ../lwip-2.2.0/port/GD32F4xx -I ../lwip-2.2.0/port/GD32F4xx/Basic -I ../Firmware/CMSIS -I ../Firmware/CMSIS/GD/GD32F4xx/Include-IC:/Users/SVI/AppData/Local/Arm/Packs/GigaDevice/GD32F4xx_DFP/3.3.0/Device/F4XX/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="536" -DGD32F450-o ./output/ethernetif.o -MD)
 I (..\lwip-2.2.0\src\include\lwip\mem.h)(0x67A458E7)
 I (..\lwip-2.2.0\src\include\lwip\opt.h)(0x67A458E7)
 I (..\inc\lwipopts.h)(0x68B69E64)
@@ -1589,11 +1850,18 @@ I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x67A458EE)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x67A458EE)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x67A458EE)
 I (..\Firmware\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x67A458EE)
-I (..\inc\main.h)(0x6A9968BC)
+I (..\inc\main.h)(0x6A9978C2)
 I (..\inc\ConfigurationUSARTn.h)(0x6A45F7AA)
+I (..\inc\init_config.h)(0x6A997549)
+I (..\inc\ethernet.h)(0x6A99784E)
+I (..\lwip-2.2.0\src\include\lwip\udp.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\ip6.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\ip.h)(0x67A458E7)
+I (..\lwip-2.2.0\src\include\lwip\prot\udp.h)(0x67A458E7)
 I (..\inc\gd32f4xx_enet_eval.h)(0x68B69E64)
-I (..\inc\init_config.h)(0x6A7ED49C)
-I (..\inc\protocol.h)(0x6A719E28)
+I (..\inc\protocol.h)(0x6A9AAE9E)
+I (..\inc\uart.h)(0x6A9974A0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68FF4D35)
 F (..\Utilities\gd32f450i_eval.h)(0x00000000)()
 F (..\src\readme.txt)(0x00000000)()
@@ -1602,13 +1870,15 @@ F (..\inc\gd32f4xx_enet_eval.h)(0x68B69E64)()
 F (..\inc\gd32f4xx_it.h)(0x68B69E64)()
 F (..\inc\gd32f4xx_libopt.h)(0x68B69E64)()
 F (..\inc\lwipopts.h)(0x68B69E64)()
-F (..\inc\main.h)(0x6A9968BC)()
+F (..\inc\main.h)(0x6A9978C2)()
 F (..\inc\netconf.h)(0x68B69E64)()
 F (..\inc\system_gd32f4xx.h)(0x68B69E64)()
 F (..\inc\ConfigurationUSARTn.h)(0x6A45F7AA)()
-F (..\inc\init_config.h)(0x6A7ED49C)()
-F (..\inc\protocol.h)(0x6A719E28)()
-F (.\timers.h)(0x6A9968BC)()
+F (..\inc\init_config.h)(0x6A997549)()
+F (..\inc\protocol.h)(0x6A9AAE9E)()
+F (..\inc\ethernet.h)(0x6A99784E)()
+F (..\inc\timers.h)(0x6A997536)()
+F (..\inc\uart.h)(0x6A9974A0)()
 F (..\Firmware\CMSIS\core_cm4.h)(0x67A458EF)()
 F (..\Firmware\CMSIS\core_cm4_simd.h)(0x67A458EF)()
 F (..\Firmware\CMSIS\core_cmFunc.h)(0x67A458EF)()

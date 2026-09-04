@@ -414,6 +414,21 @@
               <FileType>1</FileType>
               <FilePath>..\src\init_config.c</FilePath>
             </File>
+            <File>
+              <FileName>ethernet.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\ethernet.c</FilePath>
+            </File>
+            <File>
+              <FileName>timers.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\timers.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\src\uart.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -703,6 +718,21 @@
               <FileName>protocol.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\inc\protocol.h</FilePath>
+            </File>
+            <File>
+              <FileName>ethernet.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\inc\ethernet.h</FilePath>
+            </File>
+            <File>
+              <FileName>timers.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\inc\timers.h</FilePath>
+            </File>
+            <File>
+              <FileName>uart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\inc\uart.h</FilePath>
             </File>
           </Files>
         </Group>

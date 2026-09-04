@@ -31,13 +31,12 @@
   #define USART5_DIR_PIN          GPIO_PIN_8
 //=======================  =======================
 
-// 29
+#define SHIM_PRESC  50 // min 1
+#define SHIM_PERIOD 20 // min 10 from stable work 
+
 #define PRESCALER_USAT_TIM (5)  // 50 MHz
-
 #define TIMERATE_USART       ((24*((10000000/USART_BAUDRATE)))-1)// X000 ns => X0 tick timer 5MHz = 57 tick |29
-// KSH = 2 => 5.714 us
 
-//3 62
 #define USART0_RX          { for(volatile int i = 0; i <66; i++); \
                              gpio_bit_reset( USART0_PORT, USART0_DIR_PIN ); }
 
@@ -55,11 +54,11 @@
 
  void Rcu_config    (void);// ¬ключение тактировани€ 
  void Gpio_config   (void);// инициализаци€ лапок мк
-
- void Timer1_config (void);// не используетс€
+ 
  void Timer2_config (void);// конец приЄма данный по usart0
- void Timer3_config (void);// шим RS485 на дл€ новой версии платы 
+ void Timer3_config (void);// шим RS485 
  void Timer4_config (void);// конец приЄма данный по usart5
  void Timer6_config (void);// опрос по usart 125 us
  
+
 #endif
