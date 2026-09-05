@@ -338,7 +338,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>MAP_HEALFS DMA_TX_USART</Define>
               <Undefine></Undefine>
               <IncludePath>..\Firmware\GD32F4xx_standard_peripheral\Include;..\Utilities;..\inc;..\lwip-2.2.0\src\include;..\lwip-2.2.0\src\include\ipv4;..\lwip-2.2.0\src\include\netif;..\lwip-2.2.0\src\include\lwip;..\lwip-2.2.0\port\GD32F4xx;..\lwip-2.2.0\port\GD32F4xx\Basic;..\Firmware\CMSIS;..\Firmware\CMSIS\GD\GD32F4xx\Include</IncludePath>
             </VariousControls>

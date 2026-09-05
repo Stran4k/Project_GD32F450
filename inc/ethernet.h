@@ -26,15 +26,15 @@
 #define LOCAL_MAC_ADDR5   0xC0
  
 /* static IP address: BOARD_IP_ADDR0.BOARD_IP_ADDR1.BOARD_IP_ADDR2.BOARD_IP_ADDR3 */
-#define LOCAL_IP_ADDR0   192
-#define LOCAL_IP_ADDR1   168
-#define LOCAL_IP_ADDR2   17
+ #define LOCAL_IP_ADDR0   192
+ #define LOCAL_IP_ADDR1   168
+ #define LOCAL_IP_ADDR2   17
 #if    (LOCAL_MAC_ADDR5 ==  0xC2)
-#define LOCAL_IP_ADDR3   232
+ #define LOCAL_IP_ADDR3   232
 #elif  (LOCAL_MAC_ADDR5  == 0xC1)
-#define LOCAL_IP_ADDR3   231
+ #define LOCAL_IP_ADDR3   231
 #elif  (LOCAL_MAC_ADDR5  == 0xC0)
-#define LOCAL_IP_ADDR3   230
+ #define LOCAL_IP_ADDR3   230
 #else
  #error
 #endif
@@ -97,7 +97,7 @@
                                 const  ip_addr_t *addr, u16_t port); // reciev data on enet
 void udp_send_buf         (void * buf,  uint32_t size, const ip_addr_t *addr, u16_t port);
 
-#define TEST_UDP
+//#define TEST_UDP
 
 
 #if (defined (TEST_UDP))

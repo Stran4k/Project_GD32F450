@@ -8,7 +8,7 @@
 //#include "lwip/init.h"
 //#include "netif/etharp.h"
 //#include "gd32f4xx_timer.h"
-
+  
 
 
 
@@ -101,6 +101,7 @@ uint32_t  FREQ_Sys  = SystemCoreClock;
   
     gpio_bit_reset(Blink_RX_PORT,Blink_RX_PIN);
     
+
  while(1) {
       
 #ifndef USE_ENET_INTERRUPT

@@ -6,31 +6,28 @@
 
 
 #define IN_TOTAL_BKD  (12)
-#define DEVICE_IN_BKD (4*3)
+#define DEVICE_IN_BKD (4*3)// 4 yacheyki 3 proca
 //================================================================================
 
-#define  DMA_TX_USART
 #define  USART_RX_BUFFER_SIZE       (200)
 //================================================================================
-/* function declarations */
-
 void Check_message_UART       (uint8_t *message, uint8_t size);
 void Check_message_BKD        (uint8_t *message, uint8_t size);
 void Check_message_BKHO_A     (uint8_t *message, uint8_t size);
 void Check_message_OUT_SERVO  (uint8_t *message, uint8_t size);
 void Qwerty_all_Device        (void);
-
+//================================================================================
 void USART0_IRQHandler        (void);
 void USART5_IRQHandler        (void);
 void DMA1_Channel6_IRQHandler (void); //    tx uart5
 void DMA1_Channel7_IRQHandler (void); //    tx uart0
-
+//================================================================================
 void TIMER1_IRQHandler(void);
 void TIMER2_IRQHandler(void);
 void TIMER3_IRQHandler(void);
 void TIMER4_IRQHandler(void);
 void TIMER6_IRQHandler(void);
-
+//================================================================================
 const static unsigned char Crc8Table[256] = {
     0x00, 0x31, 0x62, 0x53, 0xC4, 0xF5, 0xA6, 0x97,
     0xB9, 0x88, 0xDB, 0xEA, 0x7D, 0x4C, 0x1F, 0x2E,
@@ -66,5 +63,6 @@ const static unsigned char Crc8Table[256] = {
     0x3B, 0x0A, 0x59, 0x68, 0xFF, 0xCE, 0x9D, 0xAC
 };
 unsigned char Crc8(unsigned char *pcBlock, unsigned char size);
+//================================================================================
 
 #endif /* UART_H */

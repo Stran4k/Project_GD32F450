@@ -34,8 +34,8 @@
 #define SHIM_PRESC  50 // min 1
 #define SHIM_PERIOD 20 // min 10 from stable work 
 
-#define PRESCALER_USAT_TIM (5)  // 50 MHz
-#define TIMERATE_USART       ((24*((10000000/USART_BAUDRATE)))-1)// X000 ns => X0 tick timer 5MHz = 57 tick |29
+#define PRESCALER_USAT_TIM    (5)  // 50 MHz
+#define TIMERATE_USART      ((24*((10000000/USART_BAUDRATE)))-1)// X000 ns => X0 tick timer 5MHz = 57 tick |29
 
 #define USART0_RX          { for(volatile int i = 0; i <66; i++); \
                              gpio_bit_reset( USART0_PORT, USART0_DIR_PIN ); }

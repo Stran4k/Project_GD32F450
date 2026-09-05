@@ -103,280 +103,277 @@ void Qwerty_all_Device        ( void )
     }
   }
   
-  
-if(current_BKD<IN_TOTAL_BKD){//  Speaking to device BKD
+  if(current_BKD<IN_TOTAL_BKD){//  Speaking to device BKD
   message_from_BKD [current_BKD] [0]= current_device_in_BKDx+current_BKD*DEVICE_IN_BKD;
- switch (current_device_in_BKDx)//  Check Device
+  switch (current_device_in_BKDx)//  Check Device
   {
-                  //  YKP    
-  	case YKP1_BKD:
-    { 
-      YLSToYVPack[current_tick_tx_eth].data.health_abonent.ykp_poc_1 &= ~(1<<(current_BKD));
-        break;
-    }
-    case YKP2_BKD:
-    {
-      YLSToYVPack[current_tick_tx_eth].data.health_abonent.ykp_poc_2 &= ~(1<<(current_BKD));
-  	 break;
-    }
-  	case YKP3_BKD:
-    {
-      YLSToYVPack[current_tick_tx_eth].data.health_abonent.ykp_poc_3 &= ~(1<<(current_BKD));
-  	 break;
-    }
-                  //  YAZ
-  	case YAZ1_BKD:
-    {
-      YLSToYVPack[current_tick_tx_eth].data.health_abonent.yaz_poc_1 &= ~(1<<(current_BKD));
-  	 break;
-    }
-  	case YAZ2_BKD:
-    {
-      YLSToYVPack[current_tick_tx_eth].data.health_abonent.yaz_poc_2 &= ~(1<<(current_BKD));
-  	 break;
-    }
-  	case YAZ3_BKD:
-    {
-      YLSToYVPack[current_tick_tx_eth].data.health_abonent.yaz_poc_3 &= ~(1<<(current_BKD));
-  	 break;
-    }
-                  //  YPS
-  	case YPS1_BKD:
-    {
-      YLSToYVPack[current_tick_tx_eth].data.health_abonent.yps_poc_1 &= ~(1<<(current_BKD));
-  	 break;
-    }
-  	case YPS2_BKD:
-    {
-      YLSToYVPack[current_tick_tx_eth].data.health_abonent.yps_poc_2 &= ~(1<<(current_BKD));
-  	 break;
-    }
-  	case YPS3_BKD:
-    {
-      YLSToYVPack[current_tick_tx_eth].data.health_abonent.yps_poc_3 &= ~(1<<(current_BKD));
-  	 break;
-    }
-                  //  YLK_96_1_BKD1
-  	case YLK_96_1_BKD:
-    {
-      YLSToYVPack[current_tick_tx_eth].data.health_abonent.ylk96_poc_1 &= ~(1<<(current_BKD));
-  	 break;
-    }
-  	case YLK_96_2_BKD:
-    {
-      YLSToYVPack[current_tick_tx_eth].data.health_abonent.ylk96_poc_2 &= ~(1<<(current_BKD));
-  	 break;
-    }
-  	case YLK_96_3_BKD:
-    {
-      YLSToYVPack[current_tick_tx_eth].data.health_abonent.ylk96_poc_3 &= ~(1<<(current_BKD));
-  	 break;
-    }
-  	default:
-    {
-      
-  		break;
-    }
+                //  YKP    
+  case YKP1_BKD:
+  { 
+    YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ykp_poc_1 &= ~(1<<(current_BKD));
+      break;
+  }
+  case YKP2_BKD:
+  {
+    YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ykp_poc_2 &= ~(1<<(current_BKD));
+   break;
+  }
+  case YKP3_BKD:
+  {
+    YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ykp_poc_3 &= ~(1<<(current_BKD));
+   break;
+  }
+                //  YAZ
+  case YAZ1_BKD:
+  {
+    YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yaz_poc_1 &= ~(1<<(current_BKD));
+   break;
+  }
+  case YAZ2_BKD:
+  {
+    YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yaz_poc_2 &= ~(1<<(current_BKD));
+   break;
+  }
+  case YAZ3_BKD:
+  {
+    YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yaz_poc_3 &= ~(1<<(current_BKD));
+   break;
+  }
+                //  YPS
+  case YPS1_BKD:
+  {
+    YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yps_poc_1 &= ~(1<<(current_BKD));
+   break;
+  }
+  case YPS2_BKD:
+  {
+    YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yps_poc_2 &= ~(1<<(current_BKD));
+   break;
+  }
+  case YPS3_BKD:
+  {
+    YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yps_poc_3 &= ~(1<<(current_BKD));
+   break;
+  }
+                //  YLK_96_1_BKD1
+  case YLK_96_1_BKD:
+  {
+    YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ylk96_poc_1 &= ~(1<<(current_BKD));
+   break;
+  }
+  case YLK_96_2_BKD:
+  {
+    YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ylk96_poc_2 &= ~(1<<(current_BKD));
+   break;
+  }
+  case YLK_96_3_BKD:
+  {
+    YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ylk96_poc_3 &= ~(1<<(current_BKD));
+   break;
+  }
+  default:
+  {
+    
+    break;
+  }
   }
 
-}else{
-   if(current_BKD == IN_TOTAL_BKD){ //  Speaking to device in BKHO_A
-    if(++current_device_in_BKHO_A > AND_ADR_BKHO_A){
-         current_device_in_BKHO_A = START_ADR_BKHO_A;
-    }
-    message_from_BKD [current_BKD] [0]= current_device_in_BKHO_A;
-    switch (current_device_in_BKHO_A)
-    {
-                  //  YPS_BKHO_A
-      case YPS1_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.yps_bkho_a_poc_1 &= ~(1);
-       break;
+  }else{
+    if(current_BKD == IN_TOTAL_BKD){ //  Speaking to device in BKHO_A
+      if(++current_device_in_BKHO_A > AND_ADR_BKHO_A){
+           current_device_in_BKHO_A = START_ADR_BKHO_A;
       }
-      case YPS2_BKHO_A:
+      message_from_BKD [current_BKD] [0]= current_device_in_BKHO_A;
+      switch (current_device_in_BKHO_A)
       {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.yps_bkho_a_poc_2 &= ~(1);
-       break;
-      }
-      case YPS3_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.yps_bkho_a_poc_3 &= ~(1);
-       break;
-      }
-                  //  YTP
-      case YTP1_1_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytp1_bkho_a_poc_1 &= ~(1);
-       break;
-      }
-      case YTP1_2_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytp1_bkho_a_poc_2 &= ~(1);
-       break;
-      }
-      case YTP1_3_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytp1_bkho_a_poc_3 &= ~(1);
-       break;
-      }
-      case YTP2_1_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytp2_bkho_a_poc_1 &= ~(1);
-       break;
-      }
-      case YTP2_2_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytp2_bkho_a_poc_2 &= ~(1);
-       break;
-      }
-      case YTP2_3_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytp2_bkho_a_poc_3 &= ~(1);
-       break;
-      }
-                  //  YTM
-      case YTM1_1_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytm1_bkho_a_poc_1 &= ~(1);
-       break;
-      }
-      case YTM1_2_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytm1_bkho_a_poc_2 &= ~(1);
-       break;
-      }
-      case YTM1_3_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytm1_bkho_a_poc_3 &= ~(1);
-       break;
-      }
-      case YTM2_1_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytm2_bkho_a_poc_1 &= ~(1);
-       break;
-      }
-      case YTM2_2_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytm2_bkho_a_poc_2 &= ~(1);
-       break;
-      }
-      case YTM2_3_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytm2_bkho_a_poc_3 &= ~(1);
-       break;
-      }
-                  //  YGR_BKHO_A
-      case YGR1_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ygr_bkho_a_poc_1 &= ~(1);     
-       break;
-      }
-      case YGR2_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ygr_bkho_a_poc_2 &= ~(1);
-       break;
-      }
-      case YGR3_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ygr_bkho_a_poc_3 &= ~(1);
-       break;
-      }
-                  //  YLK32_3_BKHO_A
-      case YLK32_3_1_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ylk32_3_bkho_a_poc_1 &= ~(1);
-       break;
-      }
-      case YLK32_3_2_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ylk32_3_bkho_a_poc_2 &= ~(1);
-       break;
-      }
-      case YLK32_3_3_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.ylk32_3_bkho_a_poc_3 &= ~(1);
-       break;
-      }
-                  //  YVP_BKHO_A
-      case YVP1_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.yvp_bkho_a_poc_1 &= ~(1);
-       break;
-      }
-      case YVP2_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.yvp_bkho_a_poc_2 &= ~(1);
-       break;
-      }
-      case YVP3_BKHO_A:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.yvp_bkho_a_poc_3 &= ~(1);
-       break;
-      }
+                    //  YPS_BKHO_A
+        case YPS1_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yps_bkho_a_poc_1 &= ~(1);
+         break;
+        }
+        case YPS2_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yps_bkho_a_poc_2 &= ~(1);
+         break;
+        }
+        case YPS3_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yps_bkho_a_poc_3 &= ~(1);
+         break;
+        }
+                    //  YTP
+        case YTP1_1_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytp1_bkho_a_poc_1 &= ~(1);
+         break;
+        }
+        case YTP1_2_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytp1_bkho_a_poc_2 &= ~(1);
+         break;
+        }
+        case YTP1_3_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytp1_bkho_a_poc_3 &= ~(1);
+         break;
+        }
+        case YTP2_1_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytp2_bkho_a_poc_1 &= ~(1);
+         break;
+        }
+        case YTP2_2_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytp2_bkho_a_poc_2 &= ~(1);
+         break;
+        }
+        case YTP2_3_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytp2_bkho_a_poc_3 &= ~(1);
+         break;
+        }
+                    //  YTM
+        case YTM1_1_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytm1_bkho_a_poc_1 &= ~(1);
+         break;
+        }
+        case YTM1_2_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytm1_bkho_a_poc_2 &= ~(1);
+         break;
+        }
+        case YTM1_3_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytm1_bkho_a_poc_3 &= ~(1);
+         break;
+        }
+        case YTM2_1_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytm2_bkho_a_poc_1 &= ~(1);
+         break;
+        }
+        case YTM2_2_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytm2_bkho_a_poc_2 &= ~(1);
+         break;
+        }
+        case YTM2_3_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytm2_bkho_a_poc_3 &= ~(1);
+         break;
+        }
+                    //  YGR_BKHO_A
+        case YGR1_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ygr_bkho_a_poc_1 &= ~(1);     
+         break;
+        }
+        case YGR2_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ygr_bkho_a_poc_2 &= ~(1);
+         break;
+        }
+        case YGR3_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ygr_bkho_a_poc_3 &= ~(1);
+         break;
+        }
+                    //  YLK32_3_BKHO_A
+        case YLK32_3_1_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ylk32_3_bkho_a_poc_1 &= ~(1);
+         break;
+        }
+        case YLK32_3_2_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ylk32_3_bkho_a_poc_2 &= ~(1);
+         break;
+        }
+        case YLK32_3_3_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ylk32_3_bkho_a_poc_3 &= ~(1);
+         break;
+        }
+                    //  YVP_BKHO_A
+        case YVP1_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yvp_bkho_a_poc_1 &= ~(1);
+         break;
+        }
+        case YVP2_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yvp_bkho_a_poc_2 &= ~(1);
+         break;
+        }
+        case YVP3_BKHO_A:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yvp_bkho_a_poc_3 &= ~(1);
+         break;
+        }
 
-      default:
-      {
-        break;
+        default:
+        {
+          break;
+        }
       }
     }
-   }
-   else{                            //  Speaking to Out Servo
-    if(++current_device_in_OUT_SERVO > AND_ADR_OUT_SERVO){
-         current_device_in_OUT_SERVO = START_ADR_OUT_SERVO;
+    else{                            //  Speaking to Out Servo
+      if(++current_device_in_OUT_SERVO > AND_ADR_OUT_SERVO){
+           current_device_in_OUT_SERVO = START_ADR_OUT_SERVO;
+      }
+      message_from_BKD [current_BKD] [0]= current_device_in_OUT_SERVO;
+      switch (current_device_in_OUT_SERVO)
+      {
+        case OUT_SERVO_1:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo1 &= ~1;
+         break;
+        }
+        case OUT_SERVO_2:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo2 &= ~1;
+         break;
+        }
+        case OUT_SERVO_3:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo3 &= ~1;
+         break;
+        }
+        case OUT_SERVO_4:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo4 &= ~1;
+         break;
+        }
+        case OUT_SERVO_5:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo5 &= ~1;
+         break;
+        }
+        case OUT_SERVO_6:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo6 &= ~1;
+         break;
+        }
+        case OUT_SERVO_7:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo7 &= ~1;
+         break;
+        }
+        case OUT_SERVO_8:
+        {
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo8 &= ~1;
+         break;
+        }
+        default:
+        {
+          break;
+        }
+      }
     }
-    message_from_BKD [current_BKD] [0]= current_device_in_OUT_SERVO;
-    switch (current_device_in_OUT_SERVO)
-    {
-      case OUT_SERVO_1:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo1 &= ~1;
-       break;
-      }
-      case OUT_SERVO_2:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo2 &= ~1;
-       break;
-      }
-      case OUT_SERVO_3:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo3 &= ~1;
-       break;
-      }
-      case OUT_SERVO_4:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo4 &= ~1;
-       break;
-      }
-      case OUT_SERVO_5:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo5 &= ~1;
-       break;
-      }
-      case OUT_SERVO_6:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo6 &= ~1;
-       break;
-      }
-      case OUT_SERVO_7:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo7 &= ~1;
-       break;
-      }
-      case OUT_SERVO_8:
-      {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo8 &= ~1;
-       break;
-      }
-      default:
-      {
-        break;
-      }
-    }
-   }
-
-}  
+  }
     message_from_BKD [current_BKD][USART_BUFFER_TX_SIZE_YLS-1]= Crc8(message_from_BKD[current_BKD],USART_BUFFER_TX_SIZE_YLS-1);
-  
   uint32_t usart = USART5;
   
 #if ( defined (DMA_TX_USART))
@@ -444,27 +441,27 @@ void Check_message_BKD        (uint8_t *message, uint8_t size)
       case YKP1_BKD:
       {
         if(size==USART_BUFFER_TX_SIZE_YKP){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ykp_poc_1 |= (1<<(current_BKD));
-          YLSToYVPack[current_tick_tx_eth].data.ykp_angel[current_BKD][0][0]=(((uint16_t)message[0])<<8)|message[1];
-          YLSToYVPack[current_tick_tx_eth].data.ykp_angel[current_BKD][0][1]=(((uint16_t)message[2])<<8)|message[3];
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ykp_poc_1 |= (1<<(current_BKD));
+          YLSToYVPack[current_tick_tx_eth].data.ykp_angle[current_BKD][0][0]=(((uint16_t)message[0])<<8)|message[1];
+          YLSToYVPack[current_tick_tx_eth].data.ykp_angle[current_BKD][0][1]=(((uint16_t)message[2])<<8)|message[3];
         }
        break;
       }
       case YKP2_BKD:
       {
         if(size==USART_BUFFER_TX_SIZE_YKP){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ykp_poc_2 |= (1<<(current_BKD));
-          YLSToYVPack[current_tick_tx_eth].data.ykp_angel[current_BKD][1][0]=(((uint16_t)message[0])<<8)|message[1];
-          YLSToYVPack[current_tick_tx_eth].data.ykp_angel[current_BKD][1][1]=(((uint16_t)message[2])<<8)|message[3];
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ykp_poc_2 |= (1<<(current_BKD));
+          YLSToYVPack[current_tick_tx_eth].data.ykp_angle[current_BKD][1][0]=(((uint16_t)message[0])<<8)|message[1];
+          YLSToYVPack[current_tick_tx_eth].data.ykp_angle[current_BKD][1][1]=(((uint16_t)message[2])<<8)|message[3];
         }
        break;
       }
       case YKP3_BKD:
       {
         if(size==USART_BUFFER_TX_SIZE_YKP){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ykp_poc_3 |= (1<<(current_BKD));
-          YLSToYVPack[current_tick_tx_eth].data.ykp_angel[current_BKD][2][0]=(((uint16_t)message[0])<<8)|message[1];
-          YLSToYVPack[current_tick_tx_eth].data.ykp_angel[current_BKD][2][1]=(((uint16_t)message[2])<<8)|message[3];
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ykp_poc_3 |= (1<<(current_BKD));
+          YLSToYVPack[current_tick_tx_eth].data.ykp_angle[current_BKD][2][0]=(((uint16_t)message[0])<<8)|message[1];
+          YLSToYVPack[current_tick_tx_eth].data.ykp_angle[current_BKD][2][1]=(((uint16_t)message[2])<<8)|message[3];
         }
        break;
       }
@@ -472,7 +469,7 @@ void Check_message_BKD        (uint8_t *message, uint8_t size)
       case YAZ1_BKD:
       {
         if(size==USART_BUFFER_TX_SIZE_YAZ){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.yaz_poc_1 |= (1<<(current_BKD));
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yaz_poc_1 |= (1<<(current_BKD));
              for(uint8_t i=0; i<24;i++){
                YLSToYVPack[current_tick_tx_eth].data.yaz_data[current_BKD][0][i]  = message[i];
              }
@@ -482,7 +479,7 @@ void Check_message_BKD        (uint8_t *message, uint8_t size)
       case YAZ2_BKD:
       {
         if(size==USART_BUFFER_TX_SIZE_YAZ){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.yaz_poc_2 |= (1<<(current_BKD));
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yaz_poc_2 |= (1<<(current_BKD));
              for(uint8_t i=0; i<24;i++){
                YLSToYVPack[current_tick_tx_eth].data.yaz_data[current_BKD][1][i]  = message[i];
              }
@@ -492,7 +489,7 @@ void Check_message_BKD        (uint8_t *message, uint8_t size)
       case YAZ3_BKD:
       {
         if(size==USART_BUFFER_TX_SIZE_YAZ){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.yaz_poc_3 |= (1<<(current_BKD));
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yaz_poc_3 |= (1<<(current_BKD));
              for(uint8_t i=0; i<24;i++){
                YLSToYVPack[current_tick_tx_eth].data.yaz_data[current_BKD][2][i]  = message[i];
              }
@@ -503,7 +500,7 @@ void Check_message_BKD        (uint8_t *message, uint8_t size)
       case YPS1_BKD:
       {
         if(size==USART_BUFFER_TX_SIZE_YPS){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.yps_poc_1 |= (1<<(current_BKD));
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yps_poc_1 |= (1<<(current_BKD));
           YLSToYVPack[current_tick_tx_eth].data.yps_mask[current_BKD][0]=message[0];
         }
        break;
@@ -511,7 +508,7 @@ void Check_message_BKD        (uint8_t *message, uint8_t size)
       case YPS2_BKD:
       {
         if(size==USART_BUFFER_TX_SIZE_YPS){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.yps_poc_2 |= (1<<(current_BKD));
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yps_poc_2 |= (1<<(current_BKD));
           YLSToYVPack[current_tick_tx_eth].data.yps_mask[current_BKD][1]=message[0];
         }
        break;
@@ -519,7 +516,7 @@ void Check_message_BKD        (uint8_t *message, uint8_t size)
       case YPS3_BKD:
       {
         if(size==USART_BUFFER_TX_SIZE_YPS){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.yps_poc_3 |= (1<<(current_BKD));
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yps_poc_3 |= (1<<(current_BKD));
           YLSToYVPack[current_tick_tx_eth].data.yps_mask[current_BKD][2]=message[0];
         }
        break;
@@ -528,7 +525,7 @@ void Check_message_BKD        (uint8_t *message, uint8_t size)
       case YLK_96_1_BKD:
       {
         if(size==USART_BUFFER_TX_SIZE_YLK_96){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ylk96_poc_1 |= (1<<(current_BKD));
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ylk96_poc_1 |= (1<<(current_BKD));
              for(uint8_t i=0; i<24;i++){
                YLSToYVPack[current_tick_tx_eth].data.ylk96_data[current_BKD][0][i]  = message[i];
              }
@@ -538,7 +535,7 @@ void Check_message_BKD        (uint8_t *message, uint8_t size)
       case YLK_96_2_BKD:
       {
         if(size==USART_BUFFER_TX_SIZE_YLK_96){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ylk96_poc_2 |= (1<<(current_BKD));
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ylk96_poc_2 |= (1<<(current_BKD));
              for(uint8_t i=0; i<24;i++){
                YLSToYVPack[current_tick_tx_eth].data.ylk96_data[current_BKD][1][i]  = message[i];
              }
@@ -548,7 +545,7 @@ void Check_message_BKD        (uint8_t *message, uint8_t size)
       case YLK_96_3_BKD:
       {
         if(size==USART_BUFFER_TX_SIZE_YLK_96){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ylk96_poc_3 |= (1<<(current_BKD));
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ylk96_poc_3 |= (1<<(current_BKD));
              for(uint8_t i=0; i<24;i++){
                YLSToYVPack[current_tick_tx_eth].data.ylk96_data[current_BKD][2][i]  = message[i];
              }
@@ -573,7 +570,7 @@ void Check_message_BKHO_A     (uint8_t *message, uint8_t size)
       case YPS1_BKHO_A:
       {
         if(size==USART_BUFFER_TX_SIZE_YPS){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.yps_bkho_a_poc_1 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yps_bkho_a_poc_1 |= (1);
           YLSToYVPack[current_tick_tx_eth].data.yps_mask_BKHO_A[0]=message[0];
         }
        break;
@@ -581,7 +578,7 @@ void Check_message_BKHO_A     (uint8_t *message, uint8_t size)
       case YPS2_BKHO_A:
       {
         if(size==USART_BUFFER_TX_SIZE_YPS){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.yps_bkho_a_poc_2 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yps_bkho_a_poc_2 |= (1);
           YLSToYVPack[current_tick_tx_eth].data.yps_mask_BKHO_A[1]=message[0];
         }
        break;
@@ -589,7 +586,7 @@ void Check_message_BKHO_A     (uint8_t *message, uint8_t size)
       case YPS3_BKHO_A:
       {
         if(size==USART_BUFFER_TX_SIZE_YPS){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.yps_bkho_a_poc_3 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yps_bkho_a_poc_3 |= (1);
           YLSToYVPack[current_tick_tx_eth].data.yps_mask_BKHO_A[2]=message[0];
         }
        break;
@@ -598,42 +595,42 @@ void Check_message_BKHO_A     (uint8_t *message, uint8_t size)
       case YTP1_1_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YTP){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytp1_bkho_a_poc_1 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytp1_bkho_a_poc_1 |= (1);
        }
        break;
       }
       case YTP1_2_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YTP){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytp1_bkho_a_poc_2 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytp1_bkho_a_poc_2 |= (1);
        }
        break;
       }
       case YTP1_3_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YTP){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytp1_bkho_a_poc_3 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytp1_bkho_a_poc_3 |= (1);
        }
        break;
       }
       case YTP2_1_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YTP){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytp2_bkho_a_poc_1 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytp2_bkho_a_poc_1 |= (1);
        }
        break;
       }
       case YTP2_2_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YTP){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytp2_bkho_a_poc_2 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytp2_bkho_a_poc_2 |= (1);
        }
        break;
       }
       case YTP2_3_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YTP){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytp2_bkho_a_poc_3 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytp2_bkho_a_poc_3 |= (1);
        }
        break;
       }
@@ -641,42 +638,42 @@ void Check_message_BKHO_A     (uint8_t *message, uint8_t size)
       case YTM1_1_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YTM){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytm1_bkho_a_poc_1 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytm1_bkho_a_poc_1 |= (1);
        }
        break;
       }
       case YTM1_2_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YTM){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytm1_bkho_a_poc_2 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytm1_bkho_a_poc_2 |= (1);
        }
        break;
       }
       case YTM1_3_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YTM){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytm1_bkho_a_poc_3 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytm1_bkho_a_poc_3 |= (1);
        }
        break;
       }
       case YTM2_1_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YTM){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytm2_bkho_a_poc_1 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytm2_bkho_a_poc_1 |= (1);
        }
        break;
       }
       case YTM2_2_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YTM){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytm2_bkho_a_poc_2 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytm2_bkho_a_poc_2 |= (1);
        }
        break;
       }
       case YTM2_3_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YTM){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ytm2_bkho_a_poc_3 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ytm2_bkho_a_poc_3 |= (1);
        }
        break;
       }
@@ -684,21 +681,21 @@ void Check_message_BKHO_A     (uint8_t *message, uint8_t size)
       case YGR1_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YGR){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ygr_bkho_a_poc_1 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ygr_bkho_a_poc_1 |= (1);
        }
        break;
       }
       case YGR2_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YGR){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ygr_bkho_a_poc_2 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ygr_bkho_a_poc_2 |= (1);
        }
        break;
       }
       case YGR3_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YGR){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ygr_bkho_a_poc_3 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ygr_bkho_a_poc_3 |= (1);
        }
        break;
       }
@@ -706,21 +703,21 @@ void Check_message_BKHO_A     (uint8_t *message, uint8_t size)
       case YLK32_3_1_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YLK32_3){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ylk32_3_bkho_a_poc_1 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ylk32_3_bkho_a_poc_1 |= (1);
        }
        break;
       }
       case YLK32_3_2_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YLK32_3){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ylk32_3_bkho_a_poc_2 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ylk32_3_bkho_a_poc_2 |= (1);
        }
        break;
       }
       case YLK32_3_3_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YLK32_3){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.ylk32_3_bkho_a_poc_3 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.ylk32_3_bkho_a_poc_3 |= (1);
        }
        break;
       }
@@ -728,21 +725,21 @@ void Check_message_BKHO_A     (uint8_t *message, uint8_t size)
       case YVP1_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YVP){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.yvp_bkho_a_poc_1 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yvp_bkho_a_poc_1 |= (1);
        }
        break;
       }
       case YVP2_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YVP){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.yvp_bkho_a_poc_2 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yvp_bkho_a_poc_2 |= (1);
        }
        break;
       }
       case YVP3_BKHO_A:
       {
        if(size==USART_BUFFER_TX_SIZE_YVP){
-          YLSToYVPack[current_tick_tx_eth].data.health_abonent.yvp_bkho_a_poc_3 |= (1);
+          YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.yvp_bkho_a_poc_3 |= (1);
        }
        break;
       }
@@ -761,42 +758,42 @@ void Check_message_OUT_SERVO  (uint8_t *message, uint8_t size)
     {
       case OUT_SERVO_1:
       {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo1 |= 1;
+        YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo1 |= 1;
        break;
       }
       case OUT_SERVO_2:
       {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo2 |= 1;
+        YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo2 |= 1;
        break;
       }
       case OUT_SERVO_3:
       {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo3 |= 1;
+        YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo3 |= 1;
        break;
       }
       case OUT_SERVO_4:
       {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo4 |= 1;
+        YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo4 |= 1;
        break;
       }
       case OUT_SERVO_5:
       {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo5 |= 1;
+        YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo5 |= 1;
        break;
       }
       case OUT_SERVO_6:
       {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo6 |= 1;
+        YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo6 |= 1;
        break;
       }
       case OUT_SERVO_7:
       {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo7 |= 1;
+        YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo7 |= 1;
        break;
       }
       case OUT_SERVO_8:
       {
-        YLSToYVPack[current_tick_tx_eth].data.health_abonent.out_servo8 |= 1;
+        YLSToYVPack[current_tick_tx_eth].data.health_abonent.data.out_servo8 |= 1;
        break;
       }
       default:
@@ -813,11 +810,8 @@ void TIMER2_IRQHandler(void) // End Rx USART0
 		timer_interrupt_flag_clear(TIMER2, TIMER_INT_FLAG_UP);
     {
      Check_message_UART((uint8_t*)usart0_buffer_rx,usart0_counter);
-      for(uint32_t i =0; i<usart0_counter;){
-        usart0_buffer_rx[i++]=0;
-      }
-     usart0_counter = 0;
      timer_disable(TIMER2);
+     usart0_counter = 0;
      timer2En = 0;
     }
  }
@@ -828,12 +822,9 @@ void TIMER4_IRQHandler(void) // End Rx USART5
     timer_interrupt_flag_clear(TIMER4, TIMER_INT_FLAG_UP);
     {
      Check_message_UART((uint8_t*)usart5_buffer_rx,usart5_counter);
-      for(uint32_t i =0; i<usart5_counter;){
-        usart5_buffer_rx[i++]=0;
-      }  
+     timer_disable(TIMER4);
      usart5_counter= 0;
      timer4En=0;
-     timer_disable(TIMER4);
     }
  }
 }
@@ -848,18 +839,16 @@ void USART0_IRQHandler(void) // Rx data
 {
  if(usart_interrupt_flag_get  (USART0, USART_INT_FLAG_RBNE) != RESET){
     usart_interrupt_flag_clear(USART0, USART_INT_FLAG_RBNE);
-    uint8_t received_byte = (uint8_t)usart_data_receive(USART0);
-
-   if(usart0_transmit == 0){
+    usart0_buffer_rx[usart0_counter++] = (uint8_t)usart_data_receive(USART0);
+  if(usart0_transmit == 0){
     if((usart0_counter< USART_RX_BUFFER_SIZE)){
         TIMER_CNT   (TIMER2) = 0;
       if(!timer2En){
         timer2En=1;
         timer_enable(TIMER2);
       }
-      usart0_buffer_rx[usart0_counter++] = received_byte;
     }else{
-      memset((void*)usart0_buffer_rx, 0x00, usart0_counter);
+//      memset((void*)usart0_buffer_rx, 0x00, usart0_counter);
       usart0_counter = 0;
     }
   }
@@ -869,29 +858,26 @@ void USART5_IRQHandler(void) // Rx data
 {
  if(usart_interrupt_flag_get  (USART5, USART_INT_FLAG_RBNE) != RESET ){//USART_INT_FLAG_IDLE
     usart_interrupt_flag_clear(USART5, USART_INT_FLAG_RBNE);
-    
-   uint8_t received_byte = (uint8_t)usart_data_receive(USART5);
-   
+    usart5_buffer_rx[usart5_counter++]  = (uint8_t)usart_data_receive(USART5);
    if(usart5_transmit==0){
-    if(usart5_counter< USART_RX_BUFFER_SIZE){
-      TIMER_CNT   (TIMER4) = 0;
-    if(!timer4En){
-      timer4En=1;
-      timer_enable(TIMER4);
-    }
-    usart5_buffer_rx[usart5_counter++] = received_byte;
-    }else{
-      memset((void*)usart5_buffer_rx, 0x00, usart5_counter);
+     if(usart5_counter< USART_RX_BUFFER_SIZE){
+          TIMER_CNT   (TIMER4) = 0;
+        if(!timer4En){
+          timer4En=1;
+          timer_enable(TIMER4);
+        }
+     }else{
+//      memset((void*)usart5_buffer_rx, 0x00, usart5_counter);
       usart5_counter = 0;
-    }
-  }
+     }
+   }
  }
 }
 void DMA1_Channel7_IRQHandler (void) //    Tx End USART0
 {
   if (dma_flag_get  (DMA1, DMA_CH7,DMA_FLAG_FTF)!= RESET) {
       dma_flag_clear(DMA1, DMA_CH7,DMA_FLAG_FTF);
-     USART0_RX
+       USART0_RX
         usart0_transmit=0;
        dma_channel_disable(DMA1,DMA_CH7);
   }
@@ -900,7 +886,7 @@ void DMA1_Channel6_IRQHandler (void) //    Tx End USART5
 {
   if (dma_flag_get  (DMA1, DMA_CH6,DMA_FLAG_FTF)!= RESET) {
       dma_flag_clear(DMA1, DMA_CH6,DMA_FLAG_FTF);
-     USART5_RX
+       USART5_RX
         usart5_transmit=0;
        dma_channel_disable(DMA1,DMA_CH6);
   }
@@ -908,7 +894,6 @@ void DMA1_Channel6_IRQHandler (void) //    Tx End USART5
 unsigned char Crc8 (unsigned char *pcBlock, unsigned char size)
 {
     unsigned char crc = 0xFF;
- 
     while (size--)
         crc = Crc8Table[crc ^ *pcBlock++];
  

@@ -1,9 +1,13 @@
 #include "ethernet.h"
 
+
+
+
 extern uint8_t message_from_BKD [IN_TOTAL_BKD+2][USART_BUFFER_TX_SIZE_YLS];
 
 struct  udp_pcb *_udp_pcb_;
  ip_addr_t yv_ip;
+
 
 
 /// переменная для переключения пакетов отправки по ethernet
@@ -34,10 +38,10 @@ void Check_message_YV         (  void  *message)
    for (uint8_t i=0; i< IN_TOTAL_BKD+1;i++){
       message_from_BKD [i][1] =(command);
       message_from_BKD [i][2]= (rxpak->data.yps_mask[i]);//yps 
-      message_from_BKD [i][4] =(rxpak->data.ykp_angel[i][0]);
-      message_from_BKD [i][5] =(rxpak->data.ykp_angel[i][0])>>8;
-      message_from_BKD [i][6] =(rxpak->data.ykp_angel[i][1]);
-      message_from_BKD [i][7] =(rxpak->data.ykp_angel[i][1])>>8;
+      message_from_BKD [i][4] =(rxpak->data.ykp_angle[i][0]);
+      message_from_BKD [i][5] =(rxpak->data.ykp_angle[i][0])>>8;
+      message_from_BKD [i][6] =(rxpak->data.ykp_angle[i][1]);
+      message_from_BKD [i][7] =(rxpak->data.ykp_angle[i][1])>>8;
 
       message_from_BKD [i][15]= Crc8(message_from_BKD [i],15);
    }
